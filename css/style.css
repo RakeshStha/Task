@@ -1,0 +1,380 @@
+body {
+    margin: 0px;
+    background: linear-gradient(to right, rgba(161, 196, 253, 0.5), rgba(194, 233, 251, 0.5))
+}
+
+html {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.nav-responsive {
+    display: none;
+}
+
+/*Start of responsive menu*/
+@media only screen and (max-width: 360px){
+    
+    .navbar {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block; 
+    }
+
+    .flex-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .logo img{
+        height: 50px;
+        width: 100%;
+    }
+
+
+    .menu-items {
+        padding: 30px;
+        height: 280px;
+        width: 100%;
+        background-color: #2196F3;
+        
+    }
+
+   .font {
+       
+        background-color: #2196F3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .btn-sm{
+        margin-left: 80px;
+    }
+    .btn-close {
+
+        margin-left: 250px;
+    }
+
+ 
+
+    .font .text {
+        height: 500px;
+        font-size: 22px;
+    }
+    
+    #content {
+        display: none;
+    }
+    #show:target #content {
+        display: inline-block;
+    }
+    #show:target #open {
+        display: none;
+    }
+
+    .menus {
+        border: none;
+        background: none;
+    }
+}
+
+/*End of menu*/
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .flex-nav {
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+  .logo .navbar-items{
+      
+      width: 100%;
+  }
+  
+  .nav a {
+     
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .nav a.active {
+      height: 100%;
+      width: 100%;
+        background-color: var(--nav-active);
+        color: var(--light);
+  }
+
+
+  /*Container*/
+  .container{
+      margin: 0px;
+      padding: 12px;
+  }
+
+  .content{
+    margin: 0px;
+    padding: 30px;
+  
+  }
+
+
+/*Get in Touch*/
+
+.contact-detail {
+    padding: 10px;
+}
+
+.contact-detail h1{
+    margin: 10px;
+    margin-left:0px;
+}
+
+#map{
+    margin: 20px;
+    margin-left:0px;
+    height: 250px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.news-letter {
+    margin-top: 25px;
+
+}
+
+.suscribe{
+    margin: 25px;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background: none;
+    background-color: rgb(161, 33, 33);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.suscribe:hover{
+    background-color: green;
+}
+
+/*Contact*/
+
+
+  .contact-image{
+    margin:0px;
+    padding: 0px;
+    height: 150px;
+    width: 100%;
+    
+  }
+
+  .contact-image img{
+    border-radius: 15px;
+  }
+
+  .contact-form{
+      padding:10px
+  }
+
+  .contact-form h1 {
+      margin: 5px;
+      text-align: center;
+  }
+
+
+
+
+
+
+  /*Form part*/
+
+  form{
+      margin: 0px;
+      padding: 10px;
+  }
+
+  .form small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form.errors small {
+	visibility: visible;
+}
+
+
+ .input {
+    position: relative;
+    border-bottom: 2px solid darkgrey;
+    margin: 10px;
+    height: 40px;
+ }
+
+  form input{
+   
+      background: none;
+      height: 30px;
+      width:100%;
+      border: none;
+  }
+
+
+  .input i{
+    visibility: hidden;
+	position: absolute;
+	
+  }
+
+  .input:hover{
+    border-bottom: 2px solid green;
+}
+
+  textarea{
+    
+    border: none;
+    width:100%;
+    background: none;
+  }
+
+
+  ::placeholder{
+      font-size: 16px;
+      text-align: center;
+      color: darkgrey;
+  }
+
+  .text{
+    font-size: 16px;
+    text-align: center;
+    color: darkgrey;
+  }
+
+  .button{
+      margin:5px;
+      height: 30px;
+      width: 100px;
+      border-radius: 10px;
+      background: none;
+      font-size: 16px;
+      color: darkgrey;
+  }
+
+
+  .button:hover {
+    background-color: green;
+  }
+
+  /*Translator*/
+  .language {
+      margin: 20px;
+      text-align: right;
+  }
+
+
+  /*Contact form validation message*/
+
+
+
+
+.input.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+    position: absolute;
+}
+
+.input.errors i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+    position: absolute;
+}
+
+
+/*Modal form pop up css*/
+
+.overlay{
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    position: fixed;
+  top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem 4rem;
+    
+}
+
+.modal input[type=email] {
+    width: 100%;
+    padding: .5rem;
+  }
+
+.modal-close {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -2rem;
+    margin-top: -1rem;
+  
+}
+
+
+
+#submit{
+    width: 100%;
+      padding: .5rem;
+      background-color: #3371d6;
+      color: #fff;
+      border: none;
+      transition: all .3s ease;
+}
+
+#submit:hover{
+    background-color: #204582;
+}
+
+
