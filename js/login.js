@@ -15,8 +15,8 @@ var usrAccount = [ //making an array of username and password for verification
 ]
 
 //Creating cookies
-document.cookie = "Your data matter most. Thank you!"
-console.log(document.cookie);
+// document.cookie = "Your data matter most. Thank you!"
+// console.log(document.cookie);
 
 
 
@@ -43,8 +43,23 @@ function btnLogin(){
 }
 
 
-function btnGoogle(){
-    alert('Login Success')
+function onSignIn(googleUser){
+    const profile = googleUser.getBasicProfile();
+     $(".container").css("display", "none");
+    $(".data").css("display","block");
+     $("#pic").attr('src',profile.getImageUrl());
+      $("#email").text(profile.getEmail());
+    console.log(hello);
+}
+
+function signOut(){
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function(){
+        alert('You have been successfully signout');
+
+        $(".g-signin2").css("display", "block");
+        $(".data").css("display","none");
+    });
 }
 
 function btnFacebook(){
