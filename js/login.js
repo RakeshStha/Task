@@ -15,7 +15,9 @@ var usrAccount = [ //making an array of username and password for verification
 ]
 
 //Creating cookies
-document.cookie = "Your data matter most. Thank you!"
+    var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+document.cookie = username + password
 console.log(document.cookie);
 
 
