@@ -365,7 +365,7 @@ html {
 
 
 
-#submit{
+.submit{
     width: 100%;
       padding: .5rem;
       background-color: #3371d6;

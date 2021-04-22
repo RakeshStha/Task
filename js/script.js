@@ -1,3 +1,29 @@
+
+//Find me on map
+function getLocation(){
+   
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        document.getElementById("map").innerHTML = "Geolocation is not supported by this browser.";
+      }
+      function showPosition(position) {
+     
+        
+        var location = {lat:position.coords.latitude , lng:position.coords.longitude };
+    var map = new google.maps.Map(document.getElementById("map"),{
+        zoom: 20,
+        center: location
+    });
+    var marker = new google.maps.Marker({
+    position: location,
+    map:map
+})
+}
+
+}
+//end of find me on map
+
 //integrating map into website through javascript web sdk
 function initMap(){
     var location = {lat:27.69041308480009 , lng:85.34429478335618 };
@@ -25,21 +51,63 @@ const toggleModal = () => {
     document.querySelector('.overlay').classList.toggle('hidden');
 }
 
-document.querySelector('#show-modal').addEventListener('click', toggleModal);
-document.querySelector('.overlay').addEventListener('click', toggleModal);
+//check if user suscribed
+function checked(){
+    const x = document.querySelector('#show-modal');
+    if (x.innerHTML == "Suscribed"){
+        alert("Click OK to unsuscribe")
+        location.reload();
+    }
+    else{
+        toggleModal()
+    }
+    
+}
 
-document.querySelector('#suscribe-form')
+
+document.querySelector('#show-modal').addEventListener('click', checked);
+document.querySelector('.overlay').addEventListener('click', checked);
+
+document.querySelector('#submits')
   .addEventListener('click', (e) => {
   e.preventDefault();
   toggleModal();
   var email = document.getElementById('suscribe-email').value;
-  alert("Congratulation! " + email + " you have been suscribed to our channel.");
+  const x = document.getElementById('show-modal');
+
+  if (email == ""){
+    alert("Invalid !")
+  }
+  else if(email !==""){
+    alert("Congratulation! " + email + " you have been suscribed to our channel.");
+   
+    x.innerHTML = "Suscribed";
+    document.getElementById("show-modal").style.backgroundColor = "grey";
+    
+    // if (x.innerHTML = "Suscribed"){
+    //     document.querySelector('#submits')
+    // .addEventListener('click', (e) => {
+    //     alert("You have been already suscribed.")
+    // })
+    // }
+    
+
+    // const x = document.getElementById('#suscribe')
+    // x.innerHTML = "Suscribed";
+    // document.getElementById("suscribe").style.backgroundColor = "grey";
+}
+
+
+  
 });
+
+
 
 document.querySelector('.modal-close span').addEventListener('click', toggleModal);
 document.querySelector('.overlay').addEventListener('click', toggleModal);
 
 //End of modal form pop up
+
 
 //Clock code
 
@@ -74,7 +142,6 @@ showTime();
 
 //end of clock functions
 
-
 // Contact Form validation
 
 const form = document.getElementById('forms');
@@ -88,6 +155,7 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     checkInput();
 })
+
 
 function checkInput(){
     // trim to remove whitespace
@@ -154,7 +222,9 @@ function setErrorFor(input, messages) {
 function setSuccessFor(input) {
 	const formControl = input.parentElement;
 	formControl.className = 'input success';
+   
 }
+document.getElementById("forms").action = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe00emgjWasLzwREV3PJ-T30y71cTrNgfLEe5Q_zwsCJv9Hxg/formResponse";
 
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
