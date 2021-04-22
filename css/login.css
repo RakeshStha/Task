@@ -111,16 +111,27 @@
   }
   
 .data{
+  margin: 100px;
+ 
   display: none;
   text-align: center;
 }
 
 .data .details{
+  padding: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
     font-family: arial;
+}
+
+.data .details p {
+  margin: 30px;
+}
+
+.desc {
+  font-weight: 700;
 }
 
 .btn-signout{

@@ -4,170 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <meta name="google-signin-client_id" content="57624130531-4u6sl8aijcd3i1311m5rg8tkr934ctat.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tools.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
 </head>
-<script src="js/script.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/login.js" ></script>
 <body>
-    <nav class="nav">
-        <div class="navbar">
-            <div class="flex-nav">
-                <div class="flex-1 logo">
-                    <img src="img/logo.png" alt="logo" width="80px" height="80px">
-                </div>
-                <div class="flex-1">
-                    <div class="flex-row">
-                        <div class="flex-1 font"><ahref="#home" ><span class="text">Contact Us</span></a></div>
-                            <div class="flex-1 font"><a href="login.html"><span class="text" >Login</span></a></div>
-                    </div>   
-                </div>
-            </div>
-        </div> 
-    
-            <div class="nav-responsive" id="show">
+  <!--Cookies message-->
+      <div class="cookies">
+        <input class="checkbox-cb" id="checkbox-cb" type="checkbox" />
+        <div class="cookie-bar">
+          <span class="message">This website uses cookies to give you an incredible experience. By using this website you agree to the <a href="#">terms</a></span>
+          <span class="mobile">This website uses cookies, <a href="#">learn more</a></span>
+          <label for="checkbox-cb" class="close-cb">X</label>
+        </div>
+      </div>
+<!--End of cookies message-->
+
+          <!--Navbar-->
+          <nav class="nav">
+            <div class="navbar">
                 <div class="flex-nav">
-                    <div class="flex-row">
-                        <div class="flex-2">
-                            <div class=" logo">
-                                <img src="img/logo.png" alt="logo" width="80px" height="80px">
-                             </div>
-                        </div>
-                        <div class="flex-1">
-                                <a href="#show" id="open" class="btn btn-default btn-sm"><img src="img/hamburger.png" alt="menu" width="40px" height="40px"></a>
-                        </div>
-                    </div>   
-                </div>  
-                    <div class="menu-items" id="content">
-                        <a href="#hide" id="close" class="btn btn-default btn-close"><img src="img/close.png" alt="menu" width="35px" height="35px"></a>
-                        <div class="flex-col " id="menu-list">
-                            <div class="flex-1 font"><a href="#home" ><span class="text">Contact Us</span></a></div>
-                            <div class="flex-1 font"><a href="login.html"><span class="text">Login</span></a></div>
-                        </div>
+                    <div class="flex-1 logo">
+                        <img src="img/logo.png" alt="logo" width="80px" height="80px">
                     </div>
-                    
-            </div>     
-        </nav>
-
-        <!--Body-->
-        <div class="container">
-                <div class="flex-row ">
-                    <div class="flex-1 content">
-                        <div class="contact-detail">
-                            <h1 > Get in touch</h1>
-                            <p>+977-9812345678</p>
-                            <p>Kathmandu, Nepal</p>
-                            <div id="clock"></div>
-                            <div id="map">
-                            </div>
-                            
-                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ-XFSYZtSnkxUa678OjDbvlTPQr5xpFc&callback=initMap"></script>
-                            <div class="news-letter text-center">
-                                <h4>Suscribe our news letter.</h4>
-                                <button class="suscribe" id="show-modal">Suscribe</button>
-                            </div>
-
-                            <!--Modal form pop up-->
-                            <div class="overlay hidden"></div>
-                            <div class="modal hidden">
-                                <div class="modal-content">
-                                    <div class="modal-close">
-                                        <span>X</span>
-                                    </div>
-                                    <p>Please enter your email address to suscribe our channel</p>
-                                    <form id="suscribe-form">
-      
-                                        <input type="text" id="suscribe-email" placeholder="Your Email Address" required>
-                                        <button id="submit" >Submit</button>
-                                        </form>
+                    <div class="flex-1">
+                        <div class="flex-row">
+                            <div class="flex-1 font"><a href="contact.html" ><span class="text">Contact Us</span></a></div>
+                                <div class="flex-1 font"><a href="index.html"><span class="text" >Login</span></a></div>
+                        </div>   
+                    </div>
+                </div>
+            </div> 
+        
+                <div class="nav-responsive" id="show">
+                    <div class="flex-nav">
+                        <div class="flex-row">
+                            <div class="flex-2">
+                                <div class=" logo">
+                                    <img src="img/logo.png" alt="logo" width="100%" height="100%">
                                 </div>
                             </div>
-
-
+                            <div class="flex-1">
+                                    <a href="#show" id="open" class="btn btn-default btn-sm"><img src="img/hamburger.png" alt="menu" width="40px" height="40px"></a>
+                            </div>
+                        </div>   
+                    </div>  
+                        <div class="menu-items" id="content">
+                            <a href="#hide" id="close" class="btn btn-default btn-close"><img src="img/close.png" alt="menu" width="35px" height="35px"></a>
+                            <div class="flex-col " id="menu-list">
+                                <div class="flex-1 font"><a href="contact.html" ><span class="text">Contact Us</span></a></div>
+                                <div class="flex-1 font"><a href="index.html"><span class="text">Login</span></a></div>
+                            </div>
                         </div>
                         
-                    </div>
-                    <div class="flex-1 content">
-                        <div class="contact-image">
-                            <img src="img/contact.jpg" alt="contact Us" width="100%" height="100%">
-                        </div>
-                        <div class="contact-form">
-                            <h1> Contact Us </h1>
-                            <form action="" id="form" class="form">
-                                
-                                <div class="flex-row">
-                                    
-                                    <div class="flex-1 input">
-                                        <input type="text"  name="fname" id="fname" placeholder="First name">
-                                       
-                                            <i class="fas fa-check-circle"></i>
-			                                <i class="fas fa-exclamation-circle"></i>     
-                                        
-                                    </div>
-                                    <div class="flex-1 input">
-                                        <input type="text"  name="lname" id="lname" placeholder="Last name">
-                                        
-                                            <i class="fas fa-check-circle"></i>
-			                                <i class="fas fa-exclamation-circle"></i>
-                                        
-                                        
-                                    </div>
-                                </div>
+                </div>     
+            </nav>
+            <!--Navbar close-->
 
-                                <div class="flex-row">
-                                    <div class="flex-1 input">
-                                        <input type="email"  name="email" id="email" placeholder="abc@gmail.com">
-                                      
-                                            <i class="fas fa-check-circle"></i>
-			                                <i class="fas fa-exclamation-circle"></i>
-                                         
-                                       
-                                    </div>
-                                    <div class="flex-1 input">
-                                      
-                                        <input type="number"  name="phone" id="phone"  placeholder="+977-*********">
-                                    
-                                            <i class="fas fa-check-circle"></i>
-			                                <i class="fas fa-exclamation-circle"></i>
-                                            
-                                       
-                                    </div>
-                                    
-                                    <!-- <small>Error message</small> -->
-                                </div>
-                                
-                                <div class="flex-row">
-                                    <div class="flex-1 input">
-                                        <textarea rows="3" cols="40" name="msg" id="msg" form="form" placeholder="Your Message" ></textarea>
-                                        <i class="fas fa-check-circle"></i>
-			                                <i class="fas fa-exclamation-circle"></i><br>
-                                         
-                                    </div>
-                                </div>
 
-                                <div class="btn">
-                                    <button class="button">Send</button>
-                                </div>
-                                
-    
-                            </form>
-                        </div>
-                    </div>
+            
+
+      <!--Form in card format-->
+      <div class="container">
+        <div class="card">
+            
+               <h2 class="title"> Log in</h2>
+               <p class="subtitle">Don't have an account? <a href="index.html"> Sign Up</a></p>
+               <div class="g-signin2" data-onsuccess="onSignIn"></div>
+               <br>
+               <!--facebook login form validation-->
+                <script>
+
+                function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+                  console.log('statusChangeCallback');
+                  console.log(response);                   // The current login status of the person.
+                  if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+                    testAPI();  
+                  } else {                                 // Not logged into your webpage or we are unable to tell.
+                    document.getElementById('status').innerHTML = 'Please log ' +
+                      'into this webpage.';
+                  }
+                }
+              
+              
+                function checkLoginState() {               // Called when a person is finished with the Login Button.
+                  FB.getLoginStatus(function(response) {   // See the onlogin handler
+                    statusChangeCallback(response);
+                  });
+                }
+              
+              
+                window.fbAsyncInit = function() {
+                  FB.init({
+                    appId      : '2150577001745388',
+                    cookie     : true,                     // Enable cookies to allow the server to access the session.
+                    xfbml      : true,                     // Parse social plugins on this webpage.
+                    version    : 'v10.0'           // Use this Graph API version for this call.
+                  });
+              
+              
+                  FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+                    statusChangeCallback(response);        // Returns the login status.
+                  });
+                };
+               
+                function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+                  console.log('Welcome!  Fetching your information.... ');
+                  FB.api('/me', function(response) {
+                    console.log('Successful login for: ' + response.name);
+                    document.getElementById('status').innerHTML =
+                      'Thanks for logging in, ' + response.name + '!';
+                  });
+                }
+              
+              </script>
+
+               <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+            </fb:login-button>
+            
+            <div id="status">
+            </div> 
+
+            <!--Facebook login end-->
+         
+               <p class="or"><span>or</span></p>
+               <form >
+               <div class="email-login" >
+                  <label for="username"> <b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="username" id="username" >
+                  <span></span>
                 </div>
-        </div>
+                <div class="email-login" >
+                <label for="password"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="password" id="password">
+                  <span></span>
+                </div>
+               <button type="button" class="cta-btn" onclick="btnLogin()">Log In</button>
+               <a class="forget-pass" href="#">Forgot password?</a>
+            </form>
+         </div>
+    </div>
 
-
-    <!--multSupport-->
-    <div id="google_translate_element" class="language"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div class="data">
+                <div class="details">
+                    <p class="desc">Profile Details</p>
+                    <img id="pic" class="img-circle" width="100" height="100"/>
+                    <p><span class="desc">ID:</span> <span id="id"></span></p>
+                    <p ><span class="desc">Name:</span> <span id="name"></span></p>
+                    <p ><span class="desc">Email:</span><span id ="email"></span></p>
+                    <p><button onclick="signOut()" class="btn-signout btn-danger">SignOut</button></p>
+                </div>  
+            </div>
+           <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 </body>
 </html>

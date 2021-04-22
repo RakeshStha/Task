@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tools.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<script src="js/script.js" defer></script>
+<body>
+    <nav class="nav">
+        <div class="navbar">
+            <div class="flex-nav">
+                <div class="flex-1 logo">
+                    <img src="img/logo.png" alt="logo" width="80px" height="80px">
+                </div>
+                <div class="flex-1">
+                    <div class="flex-row">
+                        <div class="flex-1 font"><a href="contact.html" ><span class="text">Contact Us</span></a></div>
+                            <div class="flex-1 font"><a href="index.html"><span class="text" >Login</span></a></div>
+                    </div>   
+                </div>
+            </div>
+        </div> 
+    
+            <div class="nav-responsive" id="show">
+                <div class="flex-nav">
+                    <div class="flex-row">
+                        <div class="flex-2">
+                            <div class=" logo">
+                                <img src="img/logo.png" alt="logo" width="80px" height="80px">
+                             </div>
+                        </div>
+                        <div class="flex-1">
+                                <a href="#show" id="open" class="btn btn-default btn-sm"><img src="img/hamburger.png" alt="menu" width="40px" height="40px"></a>
+                        </div>
+                    </div>   
+                </div>  
+                    <div class="menu-items" id="content">
+                        <a href="#hide" id="close" class="btn btn-default btn-close"><img src="img/close.png" alt="menu" width="35px" height="35px"></a>
+                        <div class="flex-col " id="menu-list">
+                            <div class="flex-1 font"><a href="contact.html" ><span class="text">Contact Us</span></a></div>
+                            <div class="flex-1 font"><a href="index.html"><span class="text">Login</span></a></div>
+                        </div>
+                    </div>
+                    
+            </div>     
+        </nav>
+
+        <!--Body-->
+        <div class="container">
+                <div class="flex-row ">
+                    <div class="flex-1 content">
+                        <div class="contact-detail">
+                            <h1 > Get in touch</h1>
+                            <p>+977-9812345678</p>
+                            <p>Kathmandu, Nepal</p>
+                            <div id="clock"></div>
+                            <div id="map">
+                            </div>
+                            
+                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ-XFSYZtSnkxUa678OjDbvlTPQr5xpFc&callback=initMap"></script>
+                            <div class="news-letter text-center">
+                                <h4>Suscribe our news letter.</h4>
+                                <button class="suscribe" id="show-modal">Suscribe</button>
+                            </div>
+
+                            <!--Modal form pop up-->
+                            <div class="overlay hidden"></div>
+                            <div class="modal hidden">
+                                <div class="modal-content">
+                                    <div class="modal-close">
+                                        <span>X</span>
+                                    </div>
+                                    <p>Please enter your email address to suscribe our channel</p>
+                                    <form id="suscribe-form">
+      
+                                        <input type="text" id="suscribe-email" placeholder="Your Email Address" required>
+                                        <button id="submit" >Submit</button>
+                                        </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
+                    </div>
+                    <div class="flex-1 content">
+                        <div class="contact-image">
+                            <img src="img/contact.jpg" alt="contact Us" width="100%" height="100%">
+                        </div>
+                        <div class="contact-form">
+                            <h1> Contact Us </h1>
+                            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf_GEdUMnKFQuHU-6TNoBU9Z7SIB1m29J1KRiDWIZSbD7aq3Q/formResponses" id="form" class="form">
+                                
+                                <div class="flex-row">
+                                    
+                                    <div class="flex-1 input">
+                                        <input type="text"  name="YPqjbf" id="fname" placeholder="First name">
+                                       
+                                            <i class="fas fa-check-circle"></i>
+			                                <i class="fas fa-exclamation-circle"></i>     
+                                        
+                                    </div>
+                                    <div class="flex-1 input">
+                                        <input type="text"  name="YPqjbf" id="lname" placeholder="Last name">
+                                        
+                                            <i class="fas fa-check-circle"></i>
+			                                <i class="fas fa-exclamation-circle"></i>
+                                        
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="flex-1 input">
+                                        <input type="email"  name="email" id="email" placeholder="abc@gmail.com">
+                                      
+                                            <i class="fas fa-check-circle"></i>
+			                                <i class="fas fa-exclamation-circle"></i>
+                                         
+                                       
+                                    </div>
+                                    <div class="flex-1 input">
+                                      
+                                        <input type="number"  name="phone" id="phone"  placeholder="+977-*********">
+                                    
+                                            <i class="fas fa-check-circle"></i>
+			                                <i class="fas fa-exclamation-circle"></i>
+                                            
+                                       
+                                    </div>
+                                    
+                                    <!-- <small>Error message</small> -->
+                                </div>
+                                
+                                <div class="flex-row">
+                                    <div class="flex-1 input">
+                                        <textarea rows="3" cols="40" name="msg" id="msg" form="form" placeholder="Your Message" ></textarea>
+                                        <i class="fas fa-check-circle"></i>
+			                                <i class="fas fa-exclamation-circle"></i><br>
+                                         
+                                    </div>
+                                </div>
+
+                                <div class="btn">
+                                    <button class="button">Send</button>
+                                </div>
+                                
+    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+    <!--multSupport-->
+    <div id="google_translate_element" class="language"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
