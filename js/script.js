@@ -77,7 +77,7 @@ showTime();
 
 // Contact Form validation
 
-const form = document.getElementById('form');
+const form = document.getElementById('forms');
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const email = document.getElementById('email');
