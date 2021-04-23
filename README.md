@@ -50,6 +50,7 @@ javascript
 ![Login](https://user-images.githubusercontent.com/56125560/115825431-25d0fe00-a429-11eb-81d1-f53de28fc972.png)
 
 * 15. On Gmail and facebook login
+![email authentication](https://user-images.githubusercontent.com/56125560/115826218-43eb2e00-a42a-11eb-8132-820f0e1b6e6a.JPG)
 ![Email login](https://user-images.githubusercontent.com/56125560/115825482-3b462800-a429-11eb-8905-0092405cb550.png)
 ![facebook login](https://user-images.githubusercontent.com/56125560/115825493-3da88200-a429-11eb-8b83-0c13fdd9db1b.JPG)
 
