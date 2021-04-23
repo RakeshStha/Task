@@ -15,9 +15,8 @@ var usrAccount = [ //making an array of username and password for verification
 ]
 
 //Creating cookies
-    var username = document.getElementById('username').value
-        var password = document.getElementById('password').value
-document.cookie = username + password
+
+document.cookie = "Your data matter most"
 console.log(document.cookie);
 
 
@@ -80,6 +79,4 @@ function signOut(){
     });
 }
 
-function btnFacebook(){
-    alert('succeed');
-}
+

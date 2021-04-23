@@ -152,10 +152,16 @@
 }
   
   .g-signin2 {
-    margin: 10px;
+    margin: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .f-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   
