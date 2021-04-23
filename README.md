@@ -17,7 +17,7 @@ javascript
 * 5. Find me on map
 ![Find me](https://user-images.githubusercontent.com/56125560/115824918-6ed48280-a428-11eb-8dda-f9eae07e71dd.JPG)
 
-* 6. Connection to Googl Forms
+* 6. Connection to Google Forms ( on submition of form)
 ![conbtact submit](https://user-images.githubusercontent.com/56125560/115825106-ae9b6a00-a428-11eb-8699-4d7017aeabb2.JPG)
 
 * 7. Contact form validation(on error)
@@ -40,13 +40,17 @@ javascript
 
 * 12. Cookies
 ![cookies](https://user-images.githubusercontent.com/56125560/115825314-f4583280-a428-11eb-95d0-a2c50e9859da.JPG)
-![wrong](https://user-images.githubusercontent.com/56125560/115825328-fae6aa00-a428-11eb-8a52-b446f6db7931.JPG)
+
 ![cok](https://user-images.githubusercontent.com/56125560/115825333-fe7a3100-a428-11eb-82ec-558bd166ef34.JPG)
 
-* 13. Login
+* 13. Login and error
+![wrong](https://user-images.githubusercontent.com/56125560/115825328-fae6aa00-a428-11eb-8a52-b446f6db7931.JPG)
+
+* 14. Login
 ![Login](https://user-images.githubusercontent.com/56125560/115825431-25d0fe00-a429-11eb-81d1-f53de28fc972.png)
 
-* 14. On Gmail and facebook login
+* 15. On Gmail and facebook login
+![email authentication](https://user-images.githubusercontent.com/56125560/115826218-43eb2e00-a42a-11eb-8132-820f0e1b6e6a.JPG)
 ![Email login](https://user-images.githubusercontent.com/56125560/115825482-3b462800-a429-11eb-8905-0092405cb550.png)
 ![facebook login](https://user-images.githubusercontent.com/56125560/115825493-3da88200-a429-11eb-8b83-0c13fdd9db1b.JPG)
 
