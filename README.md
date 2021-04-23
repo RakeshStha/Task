@@ -40,13 +40,16 @@ javascript
 
 * 12. Cookies
 ![cookies](https://user-images.githubusercontent.com/56125560/115825314-f4583280-a428-11eb-95d0-a2c50e9859da.JPG)
-![wrong](https://user-images.githubusercontent.com/56125560/115825328-fae6aa00-a428-11eb-8a52-b446f6db7931.JPG)
+
 ![cok](https://user-images.githubusercontent.com/56125560/115825333-fe7a3100-a428-11eb-82ec-558bd166ef34.JPG)
 
-* 13. Login
+* 13. Login and error
+![wrong](https://user-images.githubusercontent.com/56125560/115825328-fae6aa00-a428-11eb-8a52-b446f6db7931.JPG)
+
+* 14. Login
 ![Login](https://user-images.githubusercontent.com/56125560/115825431-25d0fe00-a429-11eb-81d1-f53de28fc972.png)
 
-* 14. On Gmail and facebook login
+* 15. On Gmail and facebook login
 ![Email login](https://user-images.githubusercontent.com/56125560/115825482-3b462800-a429-11eb-8905-0092405cb550.png)
 ![facebook login](https://user-images.githubusercontent.com/56125560/115825493-3da88200-a429-11eb-8b83-0c13fdd9db1b.JPG)
 
