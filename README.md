@@ -17,7 +17,7 @@ javascript
 * 5. Find me on map
 ![Find me](https://user-images.githubusercontent.com/56125560/115824918-6ed48280-a428-11eb-8dda-f9eae07e71dd.JPG)
 
-* 6. Connection to Googl Forms
+* 6. Connection to Googl Forms ( on submition of form)
 ![conbtact submit](https://user-images.githubusercontent.com/56125560/115825106-ae9b6a00-a428-11eb-8699-4d7017aeabb2.JPG)
 
 * 7. Contact form validation(on error)
